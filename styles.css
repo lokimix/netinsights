@@ -1,0 +1,274 @@
+/*MOBILE FIRST AND INCLUSIVE*/
+
+body{
+	background-color: black;
+	border: .1em solid white;
+	
+}
+
+.container{
+	max-height: 100vh;
+	
+}
+
+header{
+	justify-content:space-between;
+	height: content;
+	display: flex;
+	flex-wrap: wrap;
+	min-width: 10em;
+	background:
+	linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, 
+	transparent 50%, 
+	transparent 75%, 
+	#242424 75%, 
+	#242424);
+	background-color: #131313;
+	background-size: 1em 1em;
+}
+
+
+.logo{	
+	height: auto;
+	padding-left: .1em;
+}
+
+#bars{
+	font-size:3em;
+	padding-right: .3em; 
+	padding-top: .3em;
+	color: #06d9b9;
+}
+
+h1{
+	font-size: 2em;
+	color: #06d9b9;
+	margin-top: 1em;
+	font-family: 'Bowlby One SC', cursive;
+}
+
+h3{
+	font-size: 2em;
+	color: #06d9b9;
+	padding-left: .3em;
+	padding-top: .6em;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+
+#nav{
+	flex: 0 0 100%;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	transition: all 0.7s ease;
+	list-style-type: none;
+	text-align: right;
+
+	
+}
+
+#nav.show{
+	height: 10em;
+	width: 35%;
+
+
+}
+
+#nav li{
+	height: 2em;
+
+	
+	
+}
+#nav li a{
+	color: white;
+	line-height: 2em;
+	text-decoration: none;
+	font-size: .7em;
+	padding-right: 2em;
+}
+main{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main div{
+	flex: 0 0 50%;
+	height: 50vw;
+
+}
+
+.box{
+	flex: 1 0 40%;
+	flex-direction: column-reverse;
+    min-height: 10em;
+    background-color: black;
+    border: solid .3em silver;
+    color: white; 
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 14em;
+    max-width: 14em;
+}
+
+.box:nth-of-type(5), .box:nth-of-type(6){
+	display: none;
+
+
+}
+
+#box1{
+	background-color: #7e0739;
+}
+
+#box2{
+	background-color: #f25e05;
+}
+
+#box3{
+	background-color: #f90505;
+}
+
+#box4{
+	background-color: #2436bd;
+}
+
+#box5{
+	background-color: #45a505;
+}
+
+#box6{
+	background-color: #fde804;
+}
+
+
+h2{
+	color: #06d9b9;
+}
+.bigIcon{
+
+	font-size: 5em;
+}
+
+footer{
+	margin-top: .2em;
+	
+}
+
+footer img{
+	
+	width: 100%;
+
+}
+
+body{
+	background-color: white;
+}
+
+
+form{
+	display: none;
+}
+
+
+/*for tablet - inclusive*/
+@media only screen and (min-width : 28em){ 
+		
+		header{
+			display: flex
+			flex-wrap: wrap;
+		}
+
+		#bars{
+			display: none;
+		}
+		
+		#nav {
+			height: 3em;
+			display: flex;
+			justify-content: space-around;
+			text-align: center;
+		}
+
+		#nav li {
+			text-align: center;
+			line-height: 2em;
+		}
+
+		h1{
+			display: flex;
+			text-align: center;	
+		}
+		.box{
+			flex: 1 0 30%;
+			max-height: 13em;
+		}
+
+		.box:nth-of-type(5),.box:nth-of-type(6){
+			display: flex;
+		}
+
+		footer img{
+			display: none;
+		}
+
+		h1{
+			padding-right: 2em;	
+		}
+
+		main{
+			max-width: 50em;
+		}
+
+
+		form{
+			font-size: .7em;
+			color: white;
+			display: block;
+			border: .3em solid black;
+			background:
+			linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+			linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+			linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+			linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+			linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+			linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, 
+			transparent 50%, 
+			transparent 75%, 
+			#242424 75%, 
+			#242424);
+			background-color: #131313;
+			background-size: 1em 1em;
+
+		}
+
+		#submit{
+			background-color: green;
+			color: white;
+			margin-top: .4em;
+
+		}
+		form textarea{
+			padding-top: .2em;
+			max-height: 5em;
+			width: 80%
+		}
+		
+}
+
+/*for destop - inclusive*/
+@media only screen and (min-width : 64em) {
+
+}
+
+

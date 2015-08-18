@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+<body>
+
+    <header>
+             <div class="logo"><img src="images/logo.png"></div><!--<h3> <*)))>{</h3>-->
+             <h1>NETINSITES</h1>
+             <div id="bars"><i class="fa fa-bars"></i></div>
+        
+        <ul id="nav">
+            <li> <a href="index.html">HOME</a></li>
+            <li> <a href="works.html">OUR WORK</a></li>
+            <li> <a href="SERVICES.html">SERVICES</a></li>
+            <li> <a href="BLOG.html">BLOG</a></li>
+            <li> <a href="CONTACT.html">CONTACT US</a></li>
+        </ul>
+
+    </header>
+        
+            <main>
+                <div href="" class="box" id="box1">CONSULTING
+                    <div class="bigIcon"><i class="fa fa-sitemap"></i></div>
+                </div>
+                             
+                <div href="" class="box" id="box2">E-COMMERCE
+                    <div class="bigIcon"><i class="fa fa-opencart"></i></div>
+                </div>
+               
+                <div href="" class="box" id="box3">WEB DEVELOPMENT
+                    <div class="bigIcon"><i class="fa fa-laptop"></i></div>
+                </div>
+               
+                <div href="" class="box" id="box4"> MARKETING
+                    <div class="bigIcon"><i class="fa fa-lightbulb-o"></i></div>
+                </div>
+
+                <div href="" class="box" id="box5">BLOG
+                    <div class="bigIcon"><i class="fa fa-rss"></i></div> 
+                </div>
+
+                <div href="" class="box" id="box6">OUR WORK
+                    <div class="bigIcon"><i class="fa fa-codepen"></i></div>
+                </div>
+            </div>
+</main>
+    
+<footer>
+    <form action="" method="POST" enctype="multipart/form-data">
+    <input name="action" value="submit" type="hidden"> Your name:<br>
+    <input name="name" size="30" type="text"><br> Your email:<br>
+    <input name="email" size="30" type="text"><br> Your message:<br>
+    <textarea name="message" rows="7" cols="30">
+    </textarea><br>
+    <input value="Send email" id="submit" type="submit">
+    </form>
+    <img src="images/foot.jpg"></div>
+</footer>
+
+<script type="text/javascript">
+    var bars = document.querySelector("#bars");
+    var nav = document.querySelector("#nav");
+
+    bars.onclick = function(){
+        if(nav.className == ""){
+            nav.className = "show";
+        }else{
+            nav.className = "";
+        }
+    }
+</script>
+
+</body>
+</html>
